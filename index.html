@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Filter</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">Photo<span>pi</span>x</div>
+
+            <div class="menu" id="show">
+                <ul>
+                    <li class=""><a class="Active-menu res-active" href="#Home">Home</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+                
+            </div>
+
+            <div class="login">
+                <label for="search">
+
+                    <i class="material-icons">search</i>
+                </label>
+                <button class="btn"><a href="#">Login</a></button>
+            </div>
+
+            <div class="menu-icon">
+                <!-- <i class="material-icons" style="font-size:30px">menu</i> -->
+
+
+                <div id="ham" onclick="menushow()"><i class="material-icons">menu</i></div>
+                <!-- <div class="cross"><i class="material-icons">cross</i></div> -->
+                <div id="cancel" onclick="menuhide()">
+                    <i class="material-icons">cancel</i>
+                </div>
+            </div>
+        </nav>
+
+        <div class="cantenar" id="Home">
+            <div class="logo big-logo">Photo<span>pi</span>x</div>
+            <div class="text">Look at this pictures <div class="change-text"></div>
+                <!-- <span class="change-text"></span> -->
+            </div>
+        </div>
+    </header>
+
+    <section id="Gallery">
+
+        <div class="filter-menu">
+            <ul>
+                <li class="Active-Filter" onclick="AllShow()">All</li>
+                <li onclick="NatureShow()" class="Nature">Nature</li>
+                <li onclick="AnimalShow()" class="Animal">Animal</li>
+                <li onclick="CarShow()" class="Car">Car</li>
+            </ul>
+        </div>
+
+        <div class="search">
+            <input type="text" class="search" id="search" placeholder="search...">
+            <button class="btn" onclick="SearchImage()">Search</button>
+        </div>
+
+        <div class="img-cantaner ">
+            <div class="images reveal " id="nature1"><img src="images/nature1.jpg" alt=""></div>
+            <div class="images reveal " id="animal1"><img src="images/animal1.jpg" alt=""></div>
+            <div class="images reveal " id="animal2"><img src="images/animal2.jpg" alt=""></div>
+            <div class="images reveal " id="nature2"><img src="images/nature2.jpg" alt=""></div>
+            <div class="images reveal " id="car3"><img src="images/car3.jpg" alt=""></div>
+            <div class="images reveal " id="car2"><img src="images/car2.jpg" alt=""></div>
+            <div class="images reveal " id="nature3"><img src="images/nature3.jpg" alt=""></div>
+            <div class="images reveal " id="car1"><img src="images/car1.jpg" alt=""></div>
+            <div class="images reveal " id="animal3"><img src="images/animal3.jpg" alt=""></div>
+        </div>
+    </section>
+
+    <section id="About">
+
+        <div class="info reveal">
+            <h1>Our <span>Information</span></h1>
+            <p>Lorem ipsum dolor sit amet consect</p>
+            <div class="member"><img src="images/member.jpg" alt=""></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus iure sapiente</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, non!</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+        <div class="icons">
+            <div class="icon"><img src="images/icon1.png" alt=""></div>
+            <div class="icon"><img src="images/icon2.png" alt=""></div>
+            <div class="icon"><img src="images/icon3.png" alt=""></div>
+            <div class="icon"><img src="images/icon4.png" alt=""></div>
+        </div>
+    </section>
+
+    <footer id="Contact">
+
+        <div class="links">
+            <h3>USEFULL LINKS</h3>
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Gallery">Gallery</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="newsletter">
+            <h3>NEWSLETTER</h3>
+            <input type="email" class="email" placeholder="Enter Email Address">
+            <button class="btn">SUBSCRIBE NOW</button>
+        </div>
+
+        <div class="contact">
+            <h3>CONTACT</h3>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <p>sit amet consectetur.</p>
+
+            <div class="icons">
+                <i class="material-icons">facebook</i>
+                <i class='fab fa-twitter'></i>
+                <i class='fab fa-dribbble'></i>
+                <i class='fab fa-behance'></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
