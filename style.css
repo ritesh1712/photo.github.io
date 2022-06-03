@@ -542,6 +542,9 @@ footer .contact i:hover {
     .info p {
         overflow: hidden;
     }
+    .text{
+        font-size: 2rem;
+    }
 }
 
 
