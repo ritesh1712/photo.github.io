@@ -156,7 +156,7 @@ a:hover{
 .text {
     color: white;
     font-size: 3rem;
-width: 150%;
+width: 100%;
 display: flex;
 justify-content: center;
 }
