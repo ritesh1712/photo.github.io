@@ -162,5 +162,9 @@ resactive.forEach((ActiveF)=>{
   ActiveF.addEventListener("click",() => {
     document.querySelector("li a.res-active").classList.remove("res-active");
     ActiveF.classList.add("res-active");
+     if(cancel.style.display=="block" ){
+      
+      menuhide();
+    }
   });
   });
